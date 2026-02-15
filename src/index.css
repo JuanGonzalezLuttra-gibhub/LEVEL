@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+:root {
+  --bg-dark: #121213;
+  --bg-card: #1A1A1B;
+  --accent-blue: #00BFFF;
+  --accent-blue-dim: rgba(0, 191, 255, 0.1);
+  --text-white: #FFFFFF;
+  --text-gray: #B0B0B0;
+  --text-muted: #666666;
+  --border-color: #2D2D2E;
+  --font-main: 'Outfit', sans-serif;
+  --transition-fast: 0.2s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  font-family: var(--font-main);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+.premium-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.accent-text {
+  color: var(--accent-blue);
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(26, 26, 27, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
